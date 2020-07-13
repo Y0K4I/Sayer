@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/newitem/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>New Item</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-blocks">
+                <div class="header-block">
+                    <div class="header-block_button">
+                        <button onclick='location.href = "index.html"' id="button-to-main"><p>&#8592</p></button>
+                    </div>
+                    <div class="header-block_text">
+                        Create new item
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="input">
+        <div class="container">
+            <div class="input-block">
+                <div class="input-block_area">
+                    <input type="text" placeholder = "Input name of new item here" size="30" id = "createItem">
+                    <div class="border"></div>
+                </div>
+                <div class="input-block_button">
+                    <button id = "create"><p>></p></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/createItem.js"></script>
+    <script src="js/mainButton.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+.header-blocks {
+  background-color: #061739;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-block {
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header-block_button button {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 1px solid;
+  background-color: #2d3164;
+  outline: 0;
+}
+
+.header-block_button p {
+  height: 50px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.7;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-block_button p:hover {
+  opacity: 1;
+}
+
+.header-block_text {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #ffffff;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.input-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.input-block_area {
+  margin-top: 50px;
+  width: 40%;
+}
+
+.input-block_area input {
+  border: none;
+  outline: none;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.input-block_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.input-block_button button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid;
+  background-color: #2d3164;
+  outline: 0;
+}
+
+.input-block_button p {
+  height: 30px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.input-block_button p:hover {
+  opacity: 1;
+}
+
+.border {
+  margin-top: 10px;
+  border-bottom: 1px solid;
+  width: 85%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */
