@@ -20,9 +20,13 @@
           flex-direction: row;
 }
 
+.header-block_button {
+  width: 80px;
+}
+
 .header-block_button button {
-  width: 75px;
-  height: 75px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   border: 1px solid;
   background-color: #2d3164;
@@ -58,7 +62,6 @@
   font-weight: 500;
   font-size: 30px;
   color: #ffffff;
-  margin-left: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,6 +127,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  opacity: 0.7;
 }
 
 .input-block_button p:hover {

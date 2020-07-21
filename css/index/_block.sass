@@ -8,8 +8,8 @@
         display: flex
         justify-content: center  
         button
-            width: 80px
-            height: 80px
+            width: 70px
+            height: 70px
             border-radius: 50%
             border: 1px solid
             box-shadow: 0 0 10px rgba(0,0,0,0.5)
@@ -20,7 +20,7 @@
                 height: 100%
                 font-family: 'Noto Sans JP', sans-serif
                 font-weight: 700
-                font-size: 50px
+                font-size: 45px
                 color: #ffffff
                 opacity: 0.7
                 margin: 0
@@ -46,6 +46,7 @@
             width: 30%
             a
                 text-decoration: none
+                color: #061739
             a:visited
                 color: #061739
         &_counter
@@ -57,13 +58,17 @@
             margin: 0
             .counter
                 display: flex
-                justify-content: flex-end
+                text-align: center
                 height: 39px
                 width: 39px
                 border: none
                 border-radius: 50% 
                 background-color: #061739
                 outline: 0
+                padding: 0
+                font-size: 15px
+            .counter::-webkit-input-placeholder 
+                color: #ffffff
             .counter:hover
                 justify-content: center   
                 height: 50px
@@ -76,6 +81,8 @@
                 font-weight: 300
                 font-size: 20px
                 color: #ffffff
+            
+           
             
        
 

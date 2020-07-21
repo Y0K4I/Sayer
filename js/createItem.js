@@ -1,13 +1,13 @@
-const create = document.querySelector('#create')
-const createItem = document.querySelector('#createItem')
+const createItemButton = document.querySelector('#create-item-button')
+const createItemInput = document.querySelector('#create-item-input')
 const itemContainer = document.querySelector('#block_container');
 const flag = localStorage.getItem('flag') || false;
 const arrItems = JSON.parse(localStorage.getItem('item')) || [];
 const buttonToMain = document.querySelector('#button-to-main'); 
 
 const addItem = function(arr) {
-    arr.forEach(itemName => {
-        itemContainer.insertAdjacentHTML('beforeend', templateItem(itemName));
+    arr.forEach(elem => {
+        itemContainer.insertAdjacentHTML('beforeend', templateItem(elem));
     })
 }
 
@@ -15,10 +15,43 @@ const templateItem = function({id, value}) {
     return `
     <div class="block-item">
         <div class="block-item_element">
-            <a>${value}</a>
+            <a href="#${value}_${id}">${value}</a>
         </div>
         <div class="block-item_counter">
-            <input data-id="${id}" class="counter">
+            <input data-id="${id}" class="counter" placeholder="0">
+        </div>
+    </div>
+    <div class="item">
+        <div class="container">
+            <div id="${value}_${id}" class="item-window">
+                <div class="item-window_new">
+                    <div class="item-window_new_header">
+                        <div class="item-window_new_header_blocks">
+                            <div class="item-window_new_header_block">
+                                <div class="item-window_new_header_block_button">
+                                    <button onclick='location.href = "index.html"'><p>&#8592</p></button>
+                                </div>
+                                <div class="item-window_new_header_block_text">
+                                    ${value}
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id-container="${id}" class="item-window_new_container">
+                    
+                    </div>
+                    <div class="item-window_new_footer">
+                        <div class="item-window_new_footer_block">
+                            <div class="item-window_new_footer_block_input">
+                                <input data-id-input="${id}" id="create-comment-input">
+                            </div>
+                            <div class="item-window_new_footer_block_button">
+                                <button data-id-comment="${id}" id="create-comment-button"><p>></p></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div> 
     `
@@ -29,11 +62,12 @@ if (flag == 'true') {
     addItem(JSON.parse(localStorage.getItem('item')));
 }
 
+console.log();
 
-create.addEventListener('click', () =>  {
+createItemButton.addEventListener('click', () =>  {
     const item = {
-        id: String(new Date().getMilliseconds()/1000),
-        value: createItem.value,
+        id: String(new Date().getMilliseconds()/100),
+        value: createItemInput.value,
     }
     arrItems.push(item);
     localStorage.setItem('item', JSON.stringify(arrItems));
@@ -44,10 +78,6 @@ create.addEventListener('click', () =>  {
 buttonToMain.addEventListener('click', () => {
     localStorage.setItem('flag', true);
 })
-
-
-
-
 
 
 
